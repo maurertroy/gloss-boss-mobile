@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Appointments – Gloss Boss Mobile</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f7f7f7;
+      color: #333;
+    }
+
+    header {
+      background-color: #008080;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo h1 {
+      margin-left: 0.5rem;
+      font-size: 1.5rem;
+    }
+
+    .logo span {
+      font-weight: 300;
+      font-size: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: bold;
+    }
+
+    .page-content {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    form.booking-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input, select, button {
+      padding: 0.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #008080;
+      color: white;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 0.5rem;
+    }
+
+    button:hover {
+      background-color: #006666;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #008080;
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <span class="icon">🚗</span>
+      <h1>Gloss Boss <span>Mobile</span></h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="appointments.html">Appointments</a>
+    </nav>
+  </header>
+
+  <section class="page-content">
+    <h2>Book an Appointment</h2>
+    <form action="#" method="post" class="booking-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="service">Service Requested</label>
+      <select id="service" name="service" required>
+        <option value="">-- Select a service --</option>
+        <option value="Exterior">Exterior Detailing</option>
+        <option value="Interior">Interior Cleaning</option>
+        <option value="Paint">Paint Correction</option>
+        <option value="Ceramic">Ceramic Coating</option>
+      </select>
+
+      <label for="date">Preferred Date</label>
+      <input type="date" id="date" name="date" required />
+
+      <button type="submit">Request Appointment</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Gloss Boss Mobile. All rights reserved.</p>
+  </footer>
+</body>
+</html>
